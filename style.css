@@ -1,0 +1,21 @@
+/* Universal selector */
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* my common class */
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.my-btn {
+    border-radius: 4px;
+    padding: ;
+    font-weight: ;
+    border: ;
+    color: ;
+    background-color: ;
+}
