@@ -2,7 +2,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    
+font-family: "Inter", sans-serif;
 
+}
+body {
+  background-color: #f5f5f5;
 }
 
 /* my common class */
@@ -24,6 +30,11 @@
     background: var(--#30B868, rgba(70, 145, 101, 1));
     background-color: #269454;
 }
+.my-btn:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.35);
+}
 
 nav {
     display: flex;
@@ -39,3 +50,183 @@ nav {
   .link-parent a {
     text-decoration: none;
   }  
+
+
+  /* hero-style */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background-image: url(./assets/hero-bg.png); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+/* DARK OVERLAY */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(2, 6, 23, 0.9),
+        rgba(2, 6, 23, 0.6)
+    );
+}
+
+/* CONTENT */
+.content {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 60%;
+    padding: 0 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* BADGE */
+.logo {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #ecfdf5;
+    color: #16a34a;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84px;
+    margin-bottom: 24px;
+}
+
+.highlight {
+    color: #22c55e;
+}
+
+/* DESCRIPTION */
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* PRIMARY BUTTON */
+.btn.primary {
+    background-color: #22c55e;
+    color: white;
+}
+.btn.primary:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.35);
+}
+
+/* SECONDARY BUTTON */
+.btn.secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.btn.secondary:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.35);
+}
+  
+
+
+/* notes section styling */
+
+.problem-section {
+    background-color: #FFFFFF;
+    padding: 120px 80px;
+    text-align: center;
+}
+
+.problem-section h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #0b2a4a;
+    margin-bottom: 12px;
+}
+
+.problem-section .subtitle {
+    font-size: 16px;
+    color: #9ca3af;
+    margin-bottom: 80px;
+}
+
+/* CARD LAYOUT */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* CARD */
+.card {
+    background-color: #ffffff;
+    width: 260px;
+    padding: 40px 28px;
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+/* ICON */
+.icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background-color: #ff5a5a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+/* CARD TEXT */
+.card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #64748b;
+}
