@@ -13,9 +13,29 @@
 
 .my-btn {
     border-radius: 4px;
-    padding: ;
-    font-weight: ;
-    border: ;
-    color: ;
-    background-color: ;
+    padding: 24px auto;
+    font-weight: 600;
+    
+    color: white;
+    border: none;
+    
+    width: 164px;
+    height: 44px;
+    background: var(--#30B868, rgba(70, 145, 101, 1));
+    background-color: #269454;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .link-parent {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+  }
+  .link-parent a {
+    text-decoration: none;
+  }  
