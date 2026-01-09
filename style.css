@@ -354,6 +354,7 @@ body {
   align-items: center;
   max-width: 1360px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .early-access h1 {
@@ -414,28 +415,8 @@ body {
   align-items: center;
 }
 
-/* Logo */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 
-.bulb {
-  font-size: 26px;
-}
 
-.kv {
-  font-size: 26px;
-  font-weight: 700;
-  color: #5fd39c;
-}
-
-.tagline {
-  font-size: 12px;
-  color: #b6c4d6;
-  margin-left: 4px;
-}
 
 /* Social */
 .social {
